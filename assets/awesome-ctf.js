@@ -14,7 +14,7 @@ var getFileData = function(url) {
 };
 
 $(document).ready(function(){
-  $.getJSON("https://api.github.com/repos/apsdehal/ctf-tools/git/trees/HEAD").
+  $.getJSON("https://api.github.com/repos/apsdehal/awesome-ctf/git/trees/HEAD").
     done(function(data){
       for (var i = data.tree.length - 1; i >= 0; i--) {
         if(data.tree[i].path == "README.md") {
